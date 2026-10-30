@@ -1,0 +1,10 @@
+NISKALA — GITHUB PAGES DEPLOY
+
+1. Ekstrak ZIP ini ke komputer dulu. JANGAN upload file .zip langsung ke repo.
+2. Upload index.html, styles.css, script.js, folder assets/, dan .nojekyll ke ROOT repo GitHub.
+3. Di repo GitHub buka Settings > Pages.
+4. Build and deployment: Source = Deploy from a branch. Branch = main, Folder = /(root). Klik Save.
+5. Cek URL publikasi yang ditampilkan GitHub Pages.
+6. Untuk project repo (bukan username.github.io), alamat biasanya https://USERNAME.github.io/NAMA-REPO/
+7. Nama folder/file dan kapitalisasi harus sama.
+8. Kalau masih 404, periksa tab Actions dan Settings > Pages.

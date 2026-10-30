@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#F5F5F0">
+  <meta name="description" content="Niskala — independent creative studio. Ide berani, eksekusi rapi. Branding, UI/UX, dan website yang gak cuma bagus, tapi juga berfungsi.">
+  <title>Niskala® — Ide Berani. Eksekusi Rapi.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/niskala-symbol-black.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Langsung ke konten</a>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="nav-inner">
+      <a href="#home" class="brand" aria-label="Niskala - ke beranda"><img src="assets/niskala-logo-black.png" alt="Niskala" /></a>
+      <div class="header-caption"><span class="pulse-dot"></span> INDEPENDENT CREATIVE STUDIO</div>
+      <nav class="desktop-nav" aria-label="Navigasi utama">
+        <a href="#about">Tentang</a><a href="#services">Layanan</a><a href="#work">Eksperimen</a><a href="#playground">Playground</a>
+      </nav>
+      <button type="button" class="nav-cta magnetic" data-open-brief>Yuk ngobrol <span aria-hidden="true">↗</span></button>
+      <button type="button" class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Buka menu"><span></span><span></span></button>
+    </div>
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Navigasi mobile" inert>
+      <a href="#about">Tentang <span>01</span></a>
+      <a href="#services">Layanan <span>02</span></a>
+      <a href="#work">Eksperimen <span>03</span></a>
+      <a href="#playground">Playground <span>04</span></a>
+      <button type="button" data-open-brief>Mulai ngobrol <span>↗</span></button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="heroTitle">
+      <div class="hero-background-grid" aria-hidden="true"></div>
+      <div class="hero-topline"><span>BUKAN STUDIO YANG SOK SERIUS.</span><span>✳ &nbsp; SAY HELLO TO GOOD IDEAS</span></div>
+      <div class="hero-content">
+        <div class="hero-copy">
+          <div class="hero-mini-tag reveal"><span class="tag-star" aria-hidden="true">✳</span> Branding / Digital / Everything in between</div>
+          <h1 id="heroTitle" class="hero-title reveal">IDE <span class="stroke-orange">BERANI<span class="period">.</span></span><br>EKSEKUSI <span class="highlight-word">RAPI<span class="period">.</span></span></h1>
+          <div class="hero-under">
+            <p>Brand lu punya cerita. Kita bantu bikin cerita itu <strong>terlihat, terasa, dan gampang dipakai.</strong> Dari identitas visual sampai pengalaman digital.</p>
+            <a class="pill-button black magnetic" href="#work">Lihat eksplorasi <span class="icon-round" aria-hidden="true">↘</span></a>
+          </div>
+        </div>
+        <div class="hero-art-wrap reveal">
+          <button class="hero-art" id="heroArt" type="button" aria-label="Klik untuk mengganti pesan pada poster interaktif">
+            <span class="art-stamp">CLICK<br>TO PLAY <span aria-hidden="true">↗</span></span>
+            <span class="art-cross c1" aria-hidden="true">✳</span><span class="art-cross c2" aria-hidden="true">✳</span>
+            <span class="art-smile" aria-hidden="true"><span></span><span></span><i></i></span>
+            <span class="art-text" id="artText">YANG<br>BIASA?<br><em>SKIP.</em></span>
+            <span class="art-footnote">NISKALA LAB — VOL. 01<br>DRAG YOUR CURSOR • TAP TO SWITCH</span>
+            <span class="art-circle" aria-hidden="true"></span>
+          </button>
+          <span class="floating-note">Biar beda,<br>gak harus ribet. <span aria-hidden="true">↙</span></span>
+        </div>
+      </div>
+      <div class="hero-footer"><a class="scroll-hint" href="#about"><span class="scroll-mouse">↓</span> SCROLL BUAT KENALAN</a><span>CREATED WITH IDEAS & A LITTLE CHAOS ©2026</span></div>
+    </section>
+
+    <div class="ticker" aria-label="Niskala: tidak kaku, transparan, ramah kantong">
+      <div class="ticker-track" aria-hidden="true">
+        <span>GAK KAKU <b>✳</b> TRANSPARAN <b>✳</b> RAMAH KANTONG <b>✳</b> IDE LIAR, EKSEKUSI RAPI <b>✳</b></span>
+        <span>GAK KAKU <b>✳</b> TRANSPARAN <b>✳</b> RAMAH KANTONG <b>✳</b> IDE LIAR, EKSEKUSI RAPI <b>✳</b></span>
+      </div>
+    </div>
+
+    <section class="intro section-padding" id="about">
+      <div class="section-kicker reveal"><span class="section-number">01 / KENALAN DULU</span><span class="tiny-plus">✳</span></div>
+      <div class="intro-layout">
+        <h2 class="statement reveal">KITA SUKA<br><span class="serif-italic">ide aneh.</span><br>TAPI HASILNYA<br>GAK BOLEH <span class="underlined">ANEH.</span></h2>
+        <div class="intro-aside reveal">
+          <div class="aside-asterisk" aria-hidden="true">✳</div>
+          <p>Niskala adalah <strong>independent creative studio</strong> yang percaya desain bagus gak harus bikin kepala pusing.</p>
+          <p>Ngobrolnya kayak temen nongkrong. Prosesnya jelas. Eksekusinya tetap serius. Cocok buat brand yang baru mulai sampai yang siap naik level.</p>
+          <a href="#process" class="text-link">Cara kerja kita <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="manifesto-cards">
+        <article class="manifesto-card reveal"><span class="manifesto-index">01</span><span class="manifesto-icon" aria-hidden="true">☺</span><h3>Gak kaku.</h3><p>Enak diajak diskusi. Gak pake istilah ribet cuma biar keliatan keren.</p></article>
+        <article class="manifesto-card reveal"><span class="manifesto-index">02</span><span class="manifesto-icon" aria-hidden="true">↗</span><h3>Transparan.</h3><p>Scope, timeline, dan revisi dibahas dari awal. Biar gak ada plot twist.</p></article>
+        <article class="manifesto-card reveal"><span class="manifesto-index">03</span><span class="manifesto-icon" aria-hidden="true">✳</span><h3>Ramah kantong.</h3><p>Solusi disesuaiin sama kebutuhan, bukan asal ditambah fitur.</p></article>
+      </div>
+    </section>
+
+    <section class="services section-padding" id="services">
+      <div class="section-kicker reveal"><span class="section-number">02 / APA YANG KITA BIKIN</span><span>THE GOOD STUFF</span></div>
+      <div class="section-heading-row reveal"><h2>LU PUNYA <span>IDE.</span><br>KITA PUNYA <i>CARA.</i></h2><p>Mulai dari “kayaknya butuh logo” sampai “website gua kenapa begini?”. Kita ngobrolin solusinya bareng.</p></div>
+      <div class="service-list">
+        <details class="service-row" open>
+          <summary><span class="service-id">01 /</span><span class="service-name">Brand Identity</span><span class="service-short">Biar punya karakter, bukan cuma logo.</span><span class="service-plus" aria-hidden="true"></span></summary>
+          <div class="service-detail"><p>Logo system, palet warna, tipografi, brand guideline, dan arah visual buat brand yang pengin diingat.</p><span class="service-tags"><span>Visual Identity</span><span>Brand Guideline</span><span>Social Media</span></span></div>
+        </details>
+        <details class="service-row">
+          <summary><span class="service-id">02 /</span><span class="service-name">UI/UX Design</span><span class="service-short">Bukan cuma cakep. Enak dipakai.</span><span class="service-plus" aria-hidden="true"></span></summary>
+          <div class="service-detail"><p>Riset sederhana yang relevan, user flow, wireframe, prototyping, dan interface yang punya alasan di setiap tombolnya.</p><span class="service-tags"><span>Product Design</span><span>Figma Prototype</span><span>Design System</span></span></div>
+        </details>
+        <details class="service-row">
+          <summary><span class="service-id">03 /</span><span class="service-name">Website Experience</span><span class="service-short">Scroll yang bikin orang betah.</span><span class="service-plus" aria-hidden="true"></span></summary>
+          <div class="service-detail"><p>Website responsif, landing page, dan digital experience yang cepet, jelas, dan tetap punya karakter.</p><span class="service-tags"><span>Web Design</span><span>Front-end</span><span>Interaction</span></span></div>
+        </details>
+      </div>
+      <div class="services-bottom"><span>* Pilih sesuai kebutuhan, gak harus ambil semuanya.</span><button class="text-link button-link" type="button" data-open-brief>Diskusi kebutuhan lu <span>↗</span></button></div>
+    </section>
+
+    <section class="work section-padding" id="work">
+      <div class="section-kicker reveal"><span class="section-number">03 / CREATIVE EXPLORATIONS</span><span>PLAY FIRST. MAKE IT BETTER.</span></div>
+      <div class="work-heading reveal"><div><h2>BUKTI IDE<br><span>BISA JADI</span> VISUAL.</h2><p>Belum portofolio klien. Ini konsep eksplorasi buat nunjukin cara kita mikir dan mendesain.</p></div><div class="filter-bar" role="group" aria-label="Filter konsep"><button class="filter active" data-filter="all" aria-pressed="true">Semua <sup>03</sup></button><button class="filter" data-filter="brand" aria-pressed="false">Branding</button><button class="filter" data-filter="digital" aria-pressed="false">Digital</button></div></div>
+      <div class="work-grid" id="workGrid">
+        <button class="project-card project-a" type="button" data-category="brand" data-project="sudut" aria-label="Lihat konsep Sudut Coffee"><span class="project-visual sudut-visual"><span class="sudut-big">SUDUT<span class="sudut-dot">.</span></span><span class="coffee-cup"><span class="cup-body">S.</span><span class="cup-handle"></span></span><span class="sudut-mini">A little pause<br>goes a long way.</span><span class="visual-corner">COFFEE / CONCEPT 01</span></span><span class="project-meta"><span><b>SUDUT.</b> Coffee with a point of view.</span><span>BRAND IDENTITY <span aria-hidden="true">↗</span></span></span></button>
+        <button class="project-card project-b" type="button" data-category="digital" data-project="rasa" aria-label="Lihat konsep Rasa App"><span class="project-visual rasa-visual"><span class="rasa-title">RASA<span>®</span></span><span class="rasa-caption">Good food, good mood.</span><span class="phone-mockup"><span class="phone-notch"></span><span class="phone-top">Hey, lapar apa hari ini? <span>⌕</span></span><span class="phone-image"><span class="food-plate"><span class="food-center">✳</span></span></span><span class="phone-bottom"><b>Enaknya makan apa?</b><span>Temuin yang pas buat mood kamu.</span><span class="phone-chip">Eksplor menu ↗</span></span></span><span class="rasa-tiny">APP DESIGN / CONCEPT 02</span></span><span class="project-meta"><span><b>RASA.</b> Menemukan makan jadi seru.</span><span>UI/UX DESIGN <span aria-hidden="true">↗</span></span></span></button>
+        <button class="project-card project-c" type="button" data-category="digital" data-project="jeda" aria-label="Lihat konsep Jeda Studio"><span class="project-visual jeda-visual"><span class="jeda-top">jeda<span>✳</span></span><span class="jeda-orbit"><span class="jeda-sun"></span></span><span class="jeda-main">BREATHE.<br>RESET.<br>REPEAT.</span><span class="jeda-bottom">Your pause matters. &nbsp;&nbsp; ↗</span><span class="jeda-caption">WEBSITE / CONCEPT 03</span></span><span class="project-meta"><span><b>JEDA.</b> Ruang tenang di layar.</span><span>WEB EXPERIENCE <span aria-hidden="true">↗</span></span></span></button>
+      </div>
+      <p class="work-footnote">* Semua karya di atas adalah <strong>self-initiated concept</strong>, bukan project komersial atau klaim kerja dengan klien tertentu.</p>
+    </section>
+
+    <section class="process section-padding" id="process">
+      <div class="section-kicker reveal"><span class="section-number">04 / GAK PAKE DRAMA</span><span>HOW WE WORK</span></div>
+      <div class="process-grid"><div class="process-title reveal"><h2>PROSES<br>JELAS.<br><span>KEPALA</span><br>WARAS.</h2><p>Empat langkah sederhana. Gak ada kejutan biaya atau revisi mendadak tanpa ngobrol dulu.</p></div><div class="steps">
+        <div class="step reveal"><span class="step-number">01</span><div><h3>Ngobrol dulu.</h3><p>Ceritain brand, kebutuhan, deadline, dan batasan budget lu.</p></div><span class="step-icon">↗</span></div>
+        <div class="step reveal"><span class="step-number">02</span><div><h3>Nyusun arah.</h3><p>Kita sepakati scope, output, timeline, dan alur revisinya.</p></div><span class="step-icon">↗</span></div>
+        <div class="step reveal"><span class="step-number">03</span><div><h3>Bikin & diskusi.</h3><p>Dari konsep ke desain. Feedback dibahas, bukan ditebak.</p></div><span class="step-icon">↗</span></div>
+        <div class="step reveal"><span class="step-number">04</span><div><h3>Siap dipakai.</h3><p>File dan hasil akhir diserahin sesuai kesepakatan.</p></div><span class="step-icon">✳</span></div>
+      </div></div>
+    </section>
+
+    <section class="playground section-padding" id="playground">
+      <div class="section-kicker reveal"><span class="section-number">05 / MAIN SEBENTAR</span><span>INTERACTIVE IDEA LAB</span></div>
+      <div class="playground-head reveal"><h2>SEBELUM SERIUS,<br><span>KITA MAIN DULU.</span></h2><p>Pilih fokus dan mood brand lu. Lihat gimana satu ide bisa punya arah visual yang beda.</p></div>
+      <div class="lab-board reveal">
+        <div class="lab-controls">
+          <div class="lab-label"><span>THE BRIEF MIXER™</span><span>01 / 02</span></div>
+          <fieldset><legend>Lu mau bikin apa?</legend><div class="choice-row" id="focusChoices"><button type="button" class="choice selected" data-focus="brand" aria-pressed="true">Brand</button><button type="button" class="choice" data-focus="web" aria-pressed="false">Website</button><button type="button" class="choice" data-focus="app" aria-pressed="false">Aplikasi</button></div></fieldset>
+          <fieldset><legend>Vibes-nya pengin gimana?</legend><div class="choice-row" id="moodChoices"><button type="button" class="choice selected" data-mood="bold" aria-pressed="true">Berani ✳</button><button type="button" class="choice" data-mood="calm" aria-pressed="false">Kalem ☼</button><button type="button" class="choice" data-mood="fun" aria-pressed="false">Playful ☺</button></div></fieldset>
+          <div class="lab-result"><span>IDE DIREKSI KITA</span><p id="labResult" aria-live="polite">Visual yang berani tampil, tipografi tegas, dan warna yang langsung bikin orang nengok.</p></div>
+          <button class="lab-button" id="useIdea" type="button">Pakai ide ini buat brief <span>↗</span></button>
+        </div>
+        <div class="lab-preview" id="labPreview" data-mood="bold"><div class="preview-header"><span>LIVE PREVIEW / NISKALA LAB</span><span class="preview-icon">✳</span></div><div class="preview-content"><span class="preview-small" id="previewSmall">BRAND CONCEPT / 2026</span><strong id="previewWord">UNCOMMON<br>IS GOOD<span>.</span></strong><span class="preview-sticker" id="previewSticker">BOLD<br>IDEAS ✳</span></div><div class="preview-footer"><span>PLAY IT YOUR WAY</span><span>↗ &nbsp; ↗ &nbsp; ↗</span></div></div>
+      </div>
+    </section>
+
+    <section class="faq section-padding" id="faq">
+      <div class="section-kicker reveal"><span class="section-number">06 / BIAR GAK NEBAK-NEBAK</span><span>QUICK ANSWERS</span></div>
+      <div class="faq-grid"><h2 class="reveal">PERTANYAAN<br>YANG <span>SERING</span><br>KEPIKIRAN.</h2><div class="faq-list">
+        <details class="faq-item"><summary>Harus punya brief lengkap dulu? <span>+</span></summary><p>Gak harus. Cerita kebutuhan lu aja dulu; dari situ kita bantu rapihin tujuan dan prioritas.</p></details>
+        <details class="faq-item"><summary>Biaya project-nya berapa? <span>+</span></summary><p>Tergantung scope, kompleksitas, dan output yang dibutuhin. Kita bahas estimasi dan rinciannya sebelum project mulai; belum ada harga paket resmi yang dipublikasikan di demo ini.</p></details>
+        <details class="faq-item"><summary>Bisa revisi desain? <span>+</span></summary><p>Bisa. Panduan Niskala menyebut 2 kali revisi termasuk; detail cakupan dan revisi tambahan disepakati di proposal project.</p></details>
+        <details class="faq-item"><summary>Bisa bantu project kecil? <span>+</span></summary><p>Boleh banget diskusi. Kita lihat kebutuhan, budget, dan prioritas supaya solusinya tetap masuk akal.</p></details>
+      </div></div>
+    </section>
+
+    <section class="closing" id="contact"><div class="closing-inner">
+      <div class="closing-top"><span>HAVE AN IDEA? / OPEN FOR CONVERSATION</span><span>✳ &nbsp; NO DRAMA, JUST IDEAS.</span></div>
+      <h2 class="closing-title reveal">YUK, BIKIN<br><span>SESUATU</span><br>YANG <i>KENA.</i></h2>
+      <div class="closing-actions"><p>Project besar atau ide yang masih setengah matang? Bawa aja dulu. Kita ngobrol.</p><button type="button" class="closing-button magnetic" data-open-brief>Buka project brief <span aria-hidden="true">↗</span></button></div>
+      <div class="closing-sparkle" aria-hidden="true">✳</div>
+    </div></section>
+  </main>
+
+  <footer class="footer"><div class="footer-main"><div><img src="assets/niskala-logo-black.png" alt="Logo resmi Niskala"><p>Independent creative studio.<br>Ngobrol santai. Bikin serius.</p></div><div class="footer-links"><div><strong>EXPLORE</strong><a href="#about">Tentang</a><a href="#services">Layanan</a><a href="#work">Eksperimen</a><a href="#playground">Playground</a></div><div><strong>CONNECT</strong><button type="button" data-open-brief>Mulai percakapan ↗</button><span>Social & email: segera hadir</span></div></div></div><div class="footer-bottom"><span>© 2026 NISKALA — INDEPENDENT CREATIVE STUDIO</span><span>BUAT YANG GAK MAU BIASA-BIASA AJA. ✳</span><a href="#home">BACK TO TOP ↑</a></div></footer>
+
+  <dialog class="brief-dialog" id="briefDialog" aria-labelledby="briefTitle"><div class="dialog-shell"><div class="dialog-head"><span>PROJECT STARTER / 001</span><button type="button" class="dialog-close" id="closeBrief" aria-label="Tutup formulir">✕</button></div><h2 id="briefTitle">CERITAIN <em>IDE LU.</em></h2><p class="dialog-desc">Belum ada inbox yang disambung ke website demo ini. Tapi lu bisa bikin brief, lalu salin atau unduh buat dikirim nanti.</p><form id="briefForm"><label>Nama lu<input required name="name" id="briefName" maxlength="80" placeholder="Panggil lu siapa?" autocomplete="name"></label><label>Lagi butuh apa?<select name="service" id="briefService"><option value="Brand Identity">Brand Identity</option><option value="UI/UX Design">UI/UX Design</option><option value="Website Experience">Website Experience</option><option value="Belum yakin, mau konsultasi dulu">Belum yakin, mau ngobrol dulu</option></select></label><label>Ceritain sedikit idenya<textarea required name="idea" id="briefIdea" maxlength="900" rows="4" placeholder="Misalnya: brand makanan gua butuh wajah baru..."></textarea></label><label>Timeline / budget (opsional)<input name="timeline" id="briefTimeline" maxlength="150" placeholder="Contoh: target bulan depan, budget diskusi"></label><div class="dialog-actions"><button type="submit" class="copy-brief">Salin brief <span>↗</span></button><button type="button" class="download-brief" id="downloadBrief">Unduh .txt ↓</button></div><p class="brief-status" id="briefStatus" role="status" aria-live="polite"></p></form><div class="dialog-bottom">GAK KAKU ✳ TRANSPARAN ✳ NO DRAMA</div></div></dialog>
+
+  <dialog class="project-dialog" id="projectDialog" aria-labelledby="projectTitle"><div class="project-dialog-shell"><div class="dialog-head"><span>CONCEPT STUDY / NISKALA LAB</span><button class="dialog-close" id="closeProject" aria-label="Tutup detail konsep" type="button">✕</button></div><span class="project-dialog-id" id="projectNumber">CONCEPT 01</span><h2 id="projectTitle">SUDUT.</h2><p id="projectDescription">Brand identity exploration untuk coffee shop yang mencari karakter simpel tapi berani.</p><div class="project-dialog-notice">✳ INI ADALAH CONCEPT WORK, BUKAN PROJECT KLIEN.</div><button type="button" class="project-dialog-button" id="projectStart" data-open-brief>Punya ide serupa? Ngobrol yuk ↗</button></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
